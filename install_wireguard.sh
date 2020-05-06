@@ -1,7 +1,6 @@
 #!/bin/bash
-DOMAIN="lv2.pocto.net"
+DOMAIN="domain.name"
 INTERFACE="ens3"
-#EMAIL="reinkarn@gmail.com"
 
 IPV4_INNER=10.66.66.1
 IPV6_INNER=fd42:42:42::1
@@ -9,7 +8,7 @@ PORT=51820
 NUM_CLIENTS=4
 DNS="$IPV4_INNER,$IPV6_INNER"
 
-apt install -y wireguard wireguard-tools curl qrencode zip net-tools mailutils python3-pip
+apt install -y wireguard wireguard-tools curl qrencode zip net-tools mailutils python3-pip wbritish wamerican
 
 #ufw deny 80/any
 #ufw deny 53/any
