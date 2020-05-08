@@ -89,8 +89,8 @@ ping-leases = false
 #route = 192.168.0.0/16
 route = default
 
-cisco-client-compat = false
-dtls-legacy = false
+cisco-client-compat = true
+dtls-legacy = true
 EOT
 
 rm -rf /etc/ocserv/ocpasswd
