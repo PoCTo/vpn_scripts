@@ -12,7 +12,7 @@ apt install iptables-persistent -y
 systemctl enable netfilter-persistent
 netfilter-persistent save
 
-apt install unbound unbound-host -y
+apt install curl unbound unbound-host -y
 curl -o /var/lib/unbound/root.hints https://www.internic.net/domain/named.cache
 
 cat <<EOT >/etc/unbound/unbound.conf
