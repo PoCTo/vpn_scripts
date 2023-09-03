@@ -95,6 +95,6 @@ systemctl enable wg-quick@wg0
 rm -rf ~/vpn_$DOMAIN.zip
 zip -j ~/vpn_$DOMAIN.zip /etc/wireguard/clients/*
 
-pip3 install telegram-send
+pip3 install -r tg_requirements.txt
 telegram-send --configure
 telegram-send --file ~/vpn_$DOMAIN.zip --caption "VPN for $DOMAIN"
