@@ -8,6 +8,7 @@ PORT=51820
 NUM_CLIENTS=4
 DNS="$IPV4_INNER,$IPV6_INNER"
 
+apt update
 apt install -y wireguard wireguard-tools curl qrencode zip net-tools mailutils python3-pip wbritish wamerican
 
 #ufw deny 80/any
